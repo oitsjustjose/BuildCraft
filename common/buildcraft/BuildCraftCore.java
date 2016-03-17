@@ -366,19 +366,19 @@ public class BuildCraftCore extends BuildCraftMod {
         MinecraftForge.EVENT_BUS.register(achievementManager);
 
         woodenGearAchievement = achievementManager.registerAchievement(new Achievement("buildcraft|core:achievement.woodenGear",
-                "woodenGearAchievement", 0, 0, woodenGearItem, null));
-        stoneGearAchievement = achievementManager.registerAchievement(new Achievement("buildcraft|core:achievement.stoneGear", "stoneGearAchievement",
+                "buildcraft|core:woodenGearAchievement", 0, 0, woodenGearItem, null));
+        stoneGearAchievement = achievementManager.registerAchievement(new Achievement("buildcraft|core:achievement.stoneGear", "buildcraft|core:stoneGearAchievement",
                 2, 0, stoneGearItem, woodenGearAchievement));
-        ironGearAchievement = achievementManager.registerAchievement(new Achievement("buildcraft|core:achievement.ironGear", "ironGearAchievement", 4,
+        ironGearAchievement = achievementManager.registerAchievement(new Achievement("buildcraft|core:achievement.ironGear", "buildcraft|core:ironGearAchievement", 4,
                 0, ironGearItem, stoneGearAchievement));
-        goldGearAchievement = achievementManager.registerAchievement(new Achievement("buildcraft|core:achievement.goldGear", "goldGearAchievement", 6,
+        goldGearAchievement = achievementManager.registerAchievement(new Achievement("buildcraft|core:achievement.goldGear", "buildcraft|core:goldGearAchievement", 6,
                 0, goldGearItem, ironGearAchievement));
         diamondGearAchievement = achievementManager.registerAchievement(new Achievement("buildcraft|core:achievement.diamondGear",
-                "diamondGearAchievement", 8, 0, diamondGearItem, goldGearAchievement));
-        wrenchAchievement = achievementManager.registerAchievement(new Achievement("buildcraft|core:achievement.wrench", "wrenchAchievement", 3, 2,
+                "buildcraft|core:diamondGearAchievement", 8, 0, diamondGearItem, goldGearAchievement));
+        wrenchAchievement = achievementManager.registerAchievement(new Achievement("buildcraft|core:achievement.wrench", "buildcraft|core:wrenchAchievement", 3, 2,
                 wrenchItem, stoneGearAchievement));
         engineRedstoneAchievement = BuildCraftCore.achievementManager.registerAchievement(new Achievement(
-                "buildcraft|core:achievement.redstoneEngine", "engineAchievement1", 1, -2, new ItemStack(engineBlock, 1, 0),
+                "buildcraft|core:achievement.redstoneEngine", "buildcraft|core:engineAchievement1", 1, -2, new ItemStack(engineBlock, 1, 0),
                 BuildCraftCore.woodenGearAchievement));
 
         // BuildCraft 6.1.4 and below - migration only
